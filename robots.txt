@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://podcastmanager.github.io/sitemap.xml
