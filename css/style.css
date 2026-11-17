@@ -391,3 +391,25 @@ body[data-preview="true"] .ph-badge { display: inline-block; position: absolute;
 /* consistent control heights */
 .field input, .field select { height: 48px; }
 .field select { padding-right: 10px; }
+
+/* ---------- Case study extras: timeline table, milestones, PDF button ---------- */
+.case__table-wrap { margin-bottom: 28px; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-s); }
+.case--featured .case__table-wrap { margin-left: clamp(24px, 4vw, 44px); margin-right: clamp(24px, 4vw, 44px); }
+.case__table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: .92rem; }
+.case__table th, .case__table td { padding: 13px 16px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.case__table thead th { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--grey); background: rgba(0, 0, 0, .03); }
+.case__table th:first-child { text-align: left; }
+.case__table tbody th { font-weight: 600; color: var(--ink); }
+.case__table tbody tr:last-child th, .case__table tbody tr:last-child td { border-bottom: 0; }
+.case__table td:last-child { font-weight: 700; color: var(--accent-dark, var(--accent)); }
+.case__miles { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.case--featured .case__miles { margin-left: clamp(24px, 4vw, 44px); margin-right: clamp(24px, 4vw, 44px); }
+.case__miles li { padding: 16px; border: 1px solid var(--line); border-radius: var(--radius-s); }
+.case__miles b { display: block; margin-bottom: 6px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.case__miles span { font-size: .9rem; line-height: 1.5; color: var(--grey); }
+.case__shots .media { aspect-ratio: var(--ar, 16/9); }
+.case__shots .media img { width: 100%; height: 100%; object-fit: cover; }
+.case__cta { margin: 28px 0 0; text-align: center; }
+.case--featured .case__cta { margin-bottom: clamp(24px, 4vw, 44px); }
+@media (max-width: 1020px) { .case__miles { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .case__miles { grid-template-columns: 1fr; } }
