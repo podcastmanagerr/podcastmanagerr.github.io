@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ppcshakib.github.io/podcastmanager/sitemap.xml
+Sitemap: https://podcastmanagerr.github.io/sitemap.xml
